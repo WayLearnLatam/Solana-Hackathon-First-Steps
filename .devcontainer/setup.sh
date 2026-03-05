@@ -10,14 +10,14 @@ apt-get update && \
       pkg-config \
       libssl-dev \
       sudo \
-      tini
+      tini &&
 
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
-source "$HOME/.cargo/env"
 
 curl --proto '=https' --tlsv1.2 -sSfL https://solana-install.solana.workers.dev | bash
 
-export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+echo 'export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
 
 echo "--- Instalación de Rust, Solana y Anchor completada ---"
 
@@ -27,14 +27,15 @@ export NVM_DIR="$HOME/.nvm"
 nvm install node
 nvm use node
 
-npm install -g yarn
-npm install -g typescript
+# cd 
+
+# npm install -g yarn
+# npm install -g typescript
+# npm install @solana/web3.js @coral-xyz/anchor
 
 anchor init template_codespaces
 
 cd template_codespaces
-
-npm install @solana/web3.js @coral-xyz/anchor
 
 solana config set --url https://api.devnet.solana.com
 
