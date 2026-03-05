@@ -71,9 +71,13 @@ Como resultado se mostrará la siguiente información:
 
 ## Carga del template en playground
 
-El primer paso es entrar a la carpeta `proyecto` y obtener el `permalink`:
+El primer paso es entrar a la carpeta `proyecto` :
 
-![permalink](./images/permalink.png)
+![permalink](./images/template_pg.png)
+
+Dentro de la carpeta es necesario obtener el `url`:
+
+![alt text](./images/url_f.png)
 
 El cual uniremos con el siguiente enlace en nuestro navegador de preferencia:
 

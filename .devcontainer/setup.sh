@@ -31,6 +31,8 @@ nvm install node
 
 npm install -g typescript   
 
+npm install @solana/web3.js @coral-xyz/anchor
+
 anchor init template_codespaces
 
 cd template_codespaces
@@ -39,5 +41,17 @@ solana config set --url https://api.devnet.solana.com
 
 solana-keygen new --no-bip39-passphrase --outfile ~/.config/solana/id.json 
 
-anchor build
+while true; do
+  echo "¿Usaras codespaces para desarrollar en Solana? (no = solo lo usare para el frontend) (si/no)"
+  read respuesta
+
+  if [ "$respuesta" = "si" ]; then
+    anchor build
+    break
+  elif
+    echo "Entorno listo para usar!!! :D"
+    break
+  else echo "Opción no válida. Por favor, ingresa 'si' o 'no'."
+  fi
+done 
 
