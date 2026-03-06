@@ -60,6 +60,9 @@ El build del proyecto se hace con `anchor build` mientras que el despliegue con 
 
 > ⚠️ Antes de hacer el deploy asegurate que en el archivo `anchor.toml` en la seccion `provider` sea: `cluster = "devnet"`
 
+<!-- ### Desarrollo de Frontend -->
+
+
 ## Solana Playground
 Solana Playground es un entorno de desarrollo online que permite escribir, compilar, desplegar y probar programas de Solana directamente desde el navegador, sin necesidad de instalar herramientas locales como Rust, Solana CLI o Anchor.
 
@@ -86,6 +89,7 @@ Como resultado se mostrará la siguiente información:
 * En amarillo: la la dirección de la wallet conectada
 
 * En azul: la cantidad de tokens en la wallet
+
 
 ## Carga del template en playground
 
